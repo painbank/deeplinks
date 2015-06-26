@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title text="">Deeplinks Demonstration App</title>
+    <link rel="stylesheet" type="text/css" href="templates/buttons.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css">
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/LaunchMyApp.js"></script>
+</head>
+
+<body>
+
+    <div align="center" ng-app="myApp" ng-controller="namesCtrl">
+
+        <button class="btnRed" onclick="window.open('fb://profile', '_system')">Open Facebook Profile</button>
+        <button class="btnRed" onclick="window.open('twitter://timeline', '_system')">Open Twitter</button>
+        <button class="btnRed" onclick="window.open('yelp://', '_system')">Yelp!</button>
+    </div>
+
+</body>
+</html>

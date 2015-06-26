@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.painbank.deeplinks"
+        versionCode = "1"
+        version     = "1.0.0" >
+    <!-- versionCode is optional and Android only -->
+
+    <name>Deeplink Demonstration</name>
+
+    <description>
+        This app demonstrates how mobile deeplinks are expected to work.  Both
+        incoming and outgoing.
+    </description>
+
+    <author href="https://www.painbank.com" email="painbank@gmail.com">
+        Richard Elswick
+    </author>
+
+    <preference name="permissions" value="none"/>
+
+    <!-- Global app icon for desktop from http://docs.phonegap.com/en/4.0.0/config_ref_images.md.html -->
+    <icon src="images/usa1/0.png" />
+
+    <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
+      <!-- used for deep linking from google search into my app -->
+      <!-- from: https://build.phonegap.com/plugins/844 -->
+      <param name="URL_SCHEME" value="..." />
+    </gap:plugin>
+
+   <feature name="http://api.phonegap.com/1.0/network" />
+
+</widget>

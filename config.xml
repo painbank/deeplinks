@@ -22,7 +22,8 @@
     <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
       <!-- used for deep linking from google search into my app -->
       <!-- from: https://build.phonegap.com/plugins/844 -->
-      <param name="deeplinks" value="..." />
+      <!-- access this application deeplinks with: deeplinks:// -->
+      <param name="URL_SCHEME" value="deeplinks" />
     </gap:plugin>
 
    <feature name="http://api.phonegap.com/1.0/network" />

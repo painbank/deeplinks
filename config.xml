@@ -3,7 +3,8 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.painbank.deeplinks"
         versionCode = "1"
-        version     = "1.0.0" >
+        version     = "1.0.0"
+        phonegap-version = "3.6.3">
     <!-- versionCode is optional and Android only -->
 
     <name>Deeplink Demonstration</name>
@@ -18,6 +19,7 @@
     </author>
 
     <preference name="permissions" value="none"/>
+    <preference name="phonegap-version" value="3.1.0" />
 
     <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
       <!-- used for deep linking from google search into my app -->

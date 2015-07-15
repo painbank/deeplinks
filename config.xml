@@ -29,5 +29,9 @@
     </gap:plugin>
 
    <feature name="http://api.phonegap.com/1.0/network" />
+ 
+   <access origin="fb:*" launch-external="yes" />
+   <access origin="twitter:*" launch-external="yes" />
+   <access origin="yelp:*" launch-external="yes" />
 
 </widget>

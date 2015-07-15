@@ -14,7 +14,7 @@ https://en.wikipedia.org/wiki/Deep_linking
 These links should open the app on a mobile device
 or take you to an install page:
 
-fb://"
-fb://profile
-twitter://timeline"
-yelp://
+[Facebook Feed](fb://)
+[Facebook Profile](fb://profile)
+[Twitter App](twitter://timeline)
+[Yelp App](yelp://)

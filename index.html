@@ -14,10 +14,11 @@
           href="android-app://com.painbank.deeplinks/deeplinks/">
     <script type="text/javascript">
     function showFb() {
+      alert('Calling WebIntent now.');
       window.plugins.webintent.startActivity({
-        action: WebIntent.ACTION_VIEW,
+        action: window.plugins.WebIntent.ACTION_VIEW,
         url: 'fb:///'},
-        function () {},
+        function () { alert('successfull WebIntent call.')},
         function () { alert('Failed to open URL via Android Intent'); });
     }
     </script>

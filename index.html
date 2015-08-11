@@ -9,8 +9,19 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugins/LaunchMyApp.js"></script>
+    <script type="text/javascript" src="js/plugins/webintent.js"></script>
     <link rel="alternate"
           href="android-app://com.painbank.deeplinks/deeplinks/"
+    <script type="text/javascript">
+      function showFb() {
+        window.plugins.webintent.startActivity({
+          action: WebIntent.ACTION_VIEW,
+          url: 'fb:///',
+        }, function () {}, function () {
+          alert('Failed to open URL via Android Intent');
+        });
+      };
+    </script>
 </head>
 
 <body>
@@ -19,7 +30,8 @@
 
         <button class="btnRed" onclick="window.open('fb://profile', '_system')">Open Facebook Profile</button><br>
         <button class="btnRed" onclick="window.open('twitter://timeline', '_system')">Open Twitter</button><br>
-        <button class="btnRed" onclick="window.open('yelp://', '_system')">Yelp!</button>
+        <button class="btnRed" onclick="window.open('yelp://', '_system')">Yelp!</button><br>
+        <button class="btnRed" onclick="showFb()">Android Intent to Facebook</button>
         <br><br><br>
         <a href="fb://">Open Facebook</a><br><br>
         <a href="fb://profile">Open Facebook Profile</a><br><br>

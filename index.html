@@ -11,16 +11,15 @@
     <script type="text/javascript" src="js/plugins/LaunchMyApp.js"></script>
     <script type="text/javascript" src="js/plugins/webintent.js"></script>
     <link rel="alternate"
-          href="android-app://com.painbank.deeplinks/deeplinks/"
+          href="android-app://com.painbank.deeplinks/deeplinks/">
     <script type="text/javascript">
-      function showFb() {
-        window.plugins.webintent.startActivity({
-          action: WebIntent.ACTION_VIEW,
-          url: 'fb:///',
-        }, function () {}, function () {
-          alert('Failed to open URL via Android Intent');
-        });
-      };
+    function showFb() {
+      window.plugins.webintent.startActivity({
+        action: WebIntent.ACTION_VIEW,
+        url: 'fb:///'},
+        function () {},
+        function () { alert('Failed to open URL via Android Intent'); });
+    }
     </script>
 </head>
 

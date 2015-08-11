@@ -10,12 +10,13 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugins/LaunchMyApp.js"></script>
     <script type="text/javascript" src="js/plugins/webintent.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
     <link rel="alternate"
           href="android-app://com.painbank.deeplinks/deeplinks/">
     <script type="text/javascript">
     function showFb() {
       alert('Calling WebIntent now.');
-      window.plugins.webintent.startActivity({
+        window.plugins.webintent.startActivity({
         action: window.plugins.WebIntent.ACTION_VIEW,
         url: 'fb:///'},
         function () { alert('successfull WebIntent call.')},
